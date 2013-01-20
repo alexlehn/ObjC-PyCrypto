@@ -4,7 +4,7 @@ ObjC-PyCrypto
 Port of the [PyCrypto](http://www.pycrypto.org/ "PyCrypto") AES Cipher (only CFB Mode) to ObjC to support encryption/descryption between Python and Objective-C (and Java) without the hassle of using CommonCrypto or OpenSSL
 
 
-Importand
+Important
 =============
 
 This library does currently only support AES in CFB mode and is testet agains PyCrypto (AES.MODE_CFB) and Java's BouncyCastle (AES/CFB8/NoPadding)
