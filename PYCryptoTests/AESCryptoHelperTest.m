@@ -36,7 +36,7 @@
     NSDictionary *JSON = [CHECKSUM_JSON objectFromJSONString];
     NSArray *checksums = [JSON objectForKey:@"array"];
 
-    AESCryptoHelper *cryptoHelper = [[AESCryptoHelper alloc] initWithKey:StaticKey];
+    AESCryptoHelper *cryptoHelper = [[[AESCryptoHelper alloc] initWithKey:StaticKey] autorelease];
 
     for(NSDictionary *entry in checksums) {
 
@@ -54,7 +54,7 @@
     NSDictionary *JSON = [HEX_JSON objectFromJSONString];
     NSArray *hexValues = [JSON objectForKey:@"array"];
     
-    AESCryptoHelper *cryptoHelper = [[AESCryptoHelper alloc] initWithKey:StaticKey];
+    AESCryptoHelper *cryptoHelper = [[[AESCryptoHelper alloc] initWithKey:StaticKey] autorelease];
 
     for(NSDictionary *entry in hexValues) {
 
@@ -72,7 +72,7 @@
     NSDictionary *JSON = [HEX_JSON objectFromJSONString];
     NSArray *hexValues = [JSON objectForKey:@"array"];
     
-    AESCryptoHelper *cryptoHelper = [[AESCryptoHelper alloc] initWithKey:StaticKey];
+    AESCryptoHelper *cryptoHelper = [[[AESCryptoHelper alloc] initWithKey:StaticKey] autorelease];
 
     for(NSDictionary *entry in hexValues) {
 
@@ -90,7 +90,7 @@
     NSDictionary *JSON = [ENCRYPT_WITHOUT_CHECKSUM_JSON objectFromJSONString];
     NSArray *hexValues = [JSON objectForKey:@"array"];
     
-    AESCryptoHelper *cryptoHelper = [[AESCryptoHelper alloc] initWithKey:StaticKey];
+    AESCryptoHelper *cryptoHelper = [[[AESCryptoHelper alloc] initWithKey:StaticKey] autorelease];
 
     for(NSDictionary *entry in hexValues) {
 
@@ -109,7 +109,7 @@
     NSDictionary *JSON = [ENCRYPT_WITHOUT_CHECKSUM_JSON objectFromJSONString];
     NSArray *hexValues = [JSON objectForKey:@"array"];
     
-    AESCryptoHelper *cryptoHelper = [[AESCryptoHelper alloc] initWithKey:StaticKey];
+    AESCryptoHelper *cryptoHelper = [[[AESCryptoHelper alloc] initWithKey:StaticKey] autorelease];
 
     for(NSDictionary *entry in hexValues) {
 
@@ -131,7 +131,7 @@
     //NSString *plainText    = @"736f6d655f656d61696c40697267656e64776f2e6c793a34323030313230323236"; // some_email@irgendwo.ly:4200120226
     NSString *plainText    = @"some_email@irgendwo.ly:4200120226";
 
-    AESCryptoHelper *cryptoHelper = [[AESCryptoHelper alloc] initWithKey:keyString];
+    AESCryptoHelper *cryptoHelper = [[[AESCryptoHelper alloc] initWithKey:keyString] autorelease];
     NSData *cipherData = [cryptoHelper dataFromHexToStringConversion:cipherString];
     NSData *plainData  = [plainText dataUsingEncoding:NSUTF8StringEncoding];
 
@@ -149,22 +149,22 @@
     //NSLog(@"Data\n  KeyString: %@ \n   IVString: %@ \n CypherText: %s \n  PlainText: %s (%i) \n", keyStr, ivStr, cipherData.bytes, plainData.bytes, plainData.length);
     //printf("\n\n");
 
-    AESCipher const *cipher = [[AESCipher alloc] initWithMode:MODE_CFB keyString:keyStr ivString:ivStr];
+    AESCipher const *cipher = [[[AESCipher alloc] initWithMode:MODE_CFB keyString:keyStr ivString:ivStr] autorelease];
 
     NSData *result;
     if (direction == DECRYPT) {
         result = [cipher decrypt:cipherData];
 		
-		NSString const *resultText = [[NSString alloc] initWithData:result    encoding:NSUTF8StringEncoding];
-		NSString const *plainText  = [[NSString alloc] initWithData:plainData encoding:NSUTF8StringEncoding];
+		NSString const *resultText = [[[NSString alloc] initWithData:result    encoding:NSUTF8StringEncoding] autorelease];
+		NSString const *plainText  = [[[NSString alloc] initWithData:plainData encoding:NSUTF8StringEncoding] autorelease];
 
 		NSLog(@"Decrypting DONE \n   Result: %@ \n Expected: %@ \n ", resultText, plainText);
         assertThat(resultText, equalTo(plainText));
     } else {
         result = [cipher encrypt:plainData];
 
-		NSString const *cipherText = [[NSString alloc] initWithFormat:@"%s", cipherData.bytes];
-		NSString const *resultText  = [[NSString alloc] initWithFormat:@"%s", result.bytes];
+		NSString const *cipherText = [[[NSString alloc] initWithFormat:@"%s", cipherData.bytes] autorelease];
+		NSString const *resultText  = [[[NSString alloc] initWithFormat:@"%s", result.bytes] autorelease];
 
         NSLog(@"Encrypting DONE \n   Result: %@ \n Expected: %@ \n ", cipherText, resultText);
         assertThat(resultText, equalTo(cipherText));

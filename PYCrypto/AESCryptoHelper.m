@@ -147,23 +147,29 @@ static char nibbleToChar(uint8_t nibble)
 		// unable to find seperator ':' or position invalid
 		if (0==seperatorPosition || seperatorPosition >= plainText.length)
         {
-			return nil;
+            [plainText release];
+            plainText = nil;
 		}
-        
-		NSString *encryptedText = [plainText substringToIndex:seperatorPosition];
-		NSString *crc32Checksum = [plainText substringFromIndex:seperatorPosition+1];
-
-		// Check for Valid CRC32
-		uLong CRC32 = [self CRC32ForString:encryptedText];
-
-		if (CRC32 != [crc32Checksum longLongValue])
+        else
         {
-			return nil;
+            NSString *encryptedText = [plainText substringToIndex:seperatorPosition];
+            NSString *crc32Checksum = [plainText substringFromIndex:seperatorPosition+1];
+
+            // Check for Valid CRC32
+            uLong CRC32 = [self CRC32ForString:encryptedText];
+            
+            [plainText release];
+            plainText = nil;
+            
+            if (CRC32 == [crc32Checksum longLongValue])
+            {
+                plainText = [encryptedText copy];
+            }
         }
-		plainText = encryptedText;
 	}
     [cipher release];
-    return plainText;
+    
+    return [plainText autorelease];
 }
 
 
@@ -192,7 +198,7 @@ static char nibbleToChar(uint8_t nibble)
      }
      free(chars);
 
-     return hexString;
+     return [hexString autorelease];
 }
 
 -(NSString *)convertDataToHEXString:(NSData *)data
@@ -204,7 +210,7 @@ static char nibbleToChar(uint8_t nibble)
 		char higher = nibbleToChar(((uint8_t*)(data.bytes))[i] & 0x0f);
 		[hexString appendString:[NSString stringWithFormat:@"%c%c", lower, higher]];
 	}
-	return hexString; //[hexString copy];
+	return [hexString autorelease]; //[hexString copy];
 }
 
 -(NSString *)stringFromHexToStringConversion:(NSString *)hex
@@ -231,7 +237,7 @@ static char nibbleToChar(uint8_t nibble)
     unsigned char terminator = '\0';
     [stringData appendBytes:&terminator length:1];
 
-    return stringData;
+    return [stringData autorelease];
 }
 
 
