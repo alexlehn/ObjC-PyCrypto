@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA06A79C16AC525D00E53D88 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA06A79B16AC525D00E53D88 /* Cocoa.framework */; };
+		FA06A7A616AC525D00E53D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA06A7A416AC525D00E53D88 /* InfoPlist.strings */; };
+		FA06A7A816AC525D00E53D88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA06A7A716AC525D00E53D88 /* main.m */; };
+		FA06A7AC16AC525D00E53D88 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA06A7AA16AC525D00E53D88 /* Credits.rtf */; };
+		FA06A7AF16AC525D00E53D88 /* PYCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA06A7AE16AC525D00E53D88 /* PYCAppDelegate.m */; };
+		FA06A7B216AC525D00E53D88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA06A7B016AC525D00E53D88 /* MainMenu.xib */; };
+		FA06A7EE16AC533000E53D88 /* ObjC-PYCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA06A7ED16AC533000E53D88 /* ObjC-PYCrypto.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA06A79816AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjC-PyCrypto-CocoaExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA06A79B16AC525D00E53D88 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FA06A79E16AC525D00E53D88 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FA06A79F16AC525D00E53D88 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA06A7A016AC525D00E53D88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA06A7A316AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjC-PyCrypto-CocoaExample-Info.plist"; sourceTree = "<group>"; };
+		FA06A7A516AC525D00E53D88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA06A7A716AC525D00E53D88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA06A7A916AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC-PyCrypto-CocoaExample-Prefix.pch"; sourceTree = "<group>"; };
+		FA06A7AB16AC525D00E53D88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FA06A7AD16AC525D00E53D88 /* PYCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYCAppDelegate.h; sourceTree = "<group>"; };
+		FA06A7AE16AC525D00E53D88 /* PYCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYCAppDelegate.m; sourceTree = "<group>"; };
+		FA06A7B116AC525D00E53D88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA06A7ED16AC533000E53D88 /* ObjC-PYCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ObjC-PYCrypto.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA06A79516AC525D00E53D88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA06A79C16AC525D00E53D88 /* Cocoa.framework in Frameworks */,
+				FA06A7EE16AC533000E53D88 /* ObjC-PYCrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA06A78F16AC525D00E53D88 = {
+			isa = PBXGroup;
+			children = (
+				FA06A7A116AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample */,
+				FA06A79A16AC525D00E53D88 /* Frameworks */,
+				FA06A79916AC525D00E53D88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA06A79916AC525D00E53D88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA06A79816AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA06A79A16AC525D00E53D88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA06A7ED16AC533000E53D88 /* ObjC-PYCrypto.framework */,
+				FA06A79B16AC525D00E53D88 /* Cocoa.framework */,
+				FA06A79D16AC525D00E53D88 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA06A79D16AC525D00E53D88 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA06A79E16AC525D00E53D88 /* AppKit.framework */,
+				FA06A79F16AC525D00E53D88 /* CoreData.framework */,
+				FA06A7A016AC525D00E53D88 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FA06A7A116AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample */ = {
+			isa = PBXGroup;
+			children = (
+				FA06A7AD16AC525D00E53D88 /* PYCAppDelegate.h */,
+				FA06A7AE16AC525D00E53D88 /* PYCAppDelegate.m */,
+				FA06A7B016AC525D00E53D88 /* MainMenu.xib */,
+				FA06A7A216AC525D00E53D88 /* Supporting Files */,
+			);
+			path = "ObjC-PyCrypto-CocoaExample";
+			sourceTree = "<group>";
+		};
+		FA06A7A216AC525D00E53D88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA06A7A316AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample-Info.plist */,
+				FA06A7A416AC525D00E53D88 /* InfoPlist.strings */,
+				FA06A7A716AC525D00E53D88 /* main.m */,
+				FA06A7A916AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample-Prefix.pch */,
+				FA06A7AA16AC525D00E53D88 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA06A79716AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA06A7B516AC525D00E53D88 /* Build configuration list for PBXNativeTarget "ObjC-PyCrypto-CocoaExample" */;
+			buildPhases = (
+				FA06A79416AC525D00E53D88 /* Sources */,
+				FA06A79516AC525D00E53D88 /* Frameworks */,
+				FA06A79616AC525D00E53D88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjC-PyCrypto-CocoaExample";
+			productName = "ObjC-PyCrypto-CocoaExample";
+			productReference = FA06A79816AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA06A79016AC525D00E53D88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PYC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Alexander Lehnert";
+			};
+			buildConfigurationList = FA06A79316AC525D00E53D88 /* Build configuration list for PBXProject "ObjC-PyCrypto-CocoaExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA06A78F16AC525D00E53D88;
+			productRefGroup = FA06A79916AC525D00E53D88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA06A79716AC525D00E53D88 /* ObjC-PyCrypto-CocoaExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA06A79616AC525D00E53D88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA06A7A616AC525D00E53D88 /* InfoPlist.strings in Resources */,
+				FA06A7AC16AC525D00E53D88 /* Credits.rtf in Resources */,
+				FA06A7B216AC525D00E53D88 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA06A79416AC525D00E53D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA06A7A816AC525D00E53D88 /* main.m in Sources */,
+				FA06A7AF16AC525D00E53D88 /* PYCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA06A7A416AC525D00E53D88 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA06A7A516AC525D00E53D88 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA06A7AA16AC525D00E53D88 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA06A7AB16AC525D00E53D88 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FA06A7B016AC525D00E53D88 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA06A7B116AC525D00E53D88 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA06A7B316AC525D00E53D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA06A7B416AC525D00E53D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA06A7B616AC525D00E53D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjC-PyCrypto-CocoaExample/ObjC-PyCrypto-CocoaExample-Prefix.pch";
+				INFOPLIST_FILE = "ObjC-PyCrypto-CocoaExample/ObjC-PyCrypto-CocoaExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA06A7B716AC525D00E53D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjC-PyCrypto-CocoaExample/ObjC-PyCrypto-CocoaExample-Prefix.pch";
+				INFOPLIST_FILE = "ObjC-PyCrypto-CocoaExample/ObjC-PyCrypto-CocoaExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA06A79316AC525D00E53D88 /* Build configuration list for PBXProject "ObjC-PyCrypto-CocoaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA06A7B316AC525D00E53D88 /* Debug */,
+				FA06A7B416AC525D00E53D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA06A7B516AC525D00E53D88 /* Build configuration list for PBXNativeTarget "ObjC-PyCrypto-CocoaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA06A7B616AC525D00E53D88 /* Debug */,
+				FA06A7B716AC525D00E53D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA06A79016AC525D00E53D88 /* Project object */;
+}

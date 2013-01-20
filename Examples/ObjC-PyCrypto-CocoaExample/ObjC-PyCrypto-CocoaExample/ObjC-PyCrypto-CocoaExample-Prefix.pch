@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ObjC-PyCrypto-CocoaExample' target in the 'ObjC-PyCrypto-CocoaExample' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

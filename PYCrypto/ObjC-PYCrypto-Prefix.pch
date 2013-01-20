@@ -1,0 +1,8 @@
+//
+//  Created by Alexander Lehnert on 04.03.12.
+//  Copyright 2011 Alexander Lehnert
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
