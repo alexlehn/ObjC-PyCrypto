@@ -1,7 +1,7 @@
 ObjC-PyCrypto
 =============
 
-Port of the [PyCrypto](http://www.pycrypto.org/ "PyCrypto") AES Cipher (only CFB Mode) to ObjC to support encription/description between Python and Objective-C (and jes Java) without the hassle of using CommonCrypto or OpenSSL
+Port of the [PyCrypto](http://www.pycrypto.org/ "PyCrypto") AES Cipher (only CFB Mode) to ObjC to support encryption/descryption between Python and Objective-C (and Java) without the hassle of using CommonCrypto or OpenSSL
 
 
 Importand
