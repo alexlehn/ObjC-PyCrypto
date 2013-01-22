@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ObjC-PyCryptoIOS' target in the 'ObjC-PyCryptoIOS' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

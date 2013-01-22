@@ -20,8 +20,7 @@
 		FA06A7E116AC52AA00E53D88 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA06A7DF16AC52AA00E53D88 /* MainStoryboard_iPad.storyboard */; };
 		FA06A7E416AC52AA00E53D88 /* PYCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA06A7E316AC52AA00E53D88 /* PYCMasterViewController.m */; };
 		FA06A7E716AC52AA00E53D88 /* PYCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA06A7E616AC52AA00E53D88 /* PYCDetailViewController.m */; };
-		FA06A9B616AE8B0F00E53D88 /* libObjC-PyCrypto-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA06A9B516AE8B0F00E53D88 /* libObjC-PyCrypto-iOS.a */; };
-		FA06A9B816AE8C8F00E53D88 /* libObjC-PyCrypto-iOS.a in Resources */ = {isa = PBXBuildFile; fileRef = FA06A9B516AE8B0F00E53D88 /* libObjC-PyCrypto-iOS.a */; };
+		FA20767916AEA30500C3D40F /* ObjC-PyCryptoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA20767816AEA30500C3D40F /* ObjC-PyCryptoIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,7 @@
 		FA06A7E316AC52AA00E53D88 /* PYCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYCMasterViewController.m; sourceTree = "<group>"; };
 		FA06A7E516AC52AA00E53D88 /* PYCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYCDetailViewController.h; sourceTree = "<group>"; };
 		FA06A7E616AC52AA00E53D88 /* PYCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYCDetailViewController.m; sourceTree = "<group>"; };
-		FA06A9B516AE8B0F00E53D88 /* libObjC-PyCrypto-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libObjC-PyCrypto-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA20767816AEA30500C3D40F /* ObjC-PyCryptoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ObjC-PyCryptoIOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +54,7 @@
 				FA06A7C516AC52AA00E53D88 /* UIKit.framework in Frameworks */,
 				FA06A7C716AC52AA00E53D88 /* Foundation.framework in Frameworks */,
 				FA06A7C916AC52AA00E53D88 /* CoreGraphics.framework in Frameworks */,
-				FA06A9B616AE8B0F00E53D88 /* libObjC-PyCrypto-iOS.a in Frameworks */,
+				FA20767916AEA30500C3D40F /* ObjC-PyCryptoIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +81,7 @@
 		FA06A7C316AC52AA00E53D88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA06A9B516AE8B0F00E53D88 /* libObjC-PyCrypto-iOS.a */,
+				FA20767816AEA30500C3D40F /* ObjC-PyCryptoIOS.framework */,
 				FA06A7C416AC52AA00E53D88 /* UIKit.framework */,
 				FA06A7C616AC52AA00E53D88 /* Foundation.framework */,
 				FA06A7C816AC52AA00E53D88 /* CoreGraphics.framework */,
@@ -173,7 +172,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA06A9B816AE8C8F00E53D88 /* libObjC-PyCrypto-iOS.a in Resources */,
 				FA06A7CF16AC52AA00E53D88 /* InfoPlist.strings in Resources */,
 				FA06A7D716AC52AA00E53D88 /* Default.png in Resources */,
 				FA06A7D916AC52AA00E53D88 /* Default@2x.png in Resources */,
@@ -290,10 +288,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjC-PyCrypto-iOSExample/Example_iOS-Prefix.pch";
 				INFOPLIST_FILE = "ObjC-PyCrypto-iOSExample/Example_iOS-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/ObjC-PYCrypto-ewxwbmplotilhsgfwukbwedcbbtv/Build/Products/Debug-iphoneos\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = Example_iOS;
 				WRAPPER_EXTENSION = app;
 			};
@@ -306,10 +301,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjC-PyCrypto-iOSExample/Example_iOS-Prefix.pch";
 				INFOPLIST_FILE = "ObjC-PyCrypto-iOSExample/Example_iOS-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/ObjC-PYCrypto-ewxwbmplotilhsgfwukbwedcbbtv/Build/Products/Debug-iphoneos\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = Example_iOS;
 				WRAPPER_EXTENSION = app;
 			};

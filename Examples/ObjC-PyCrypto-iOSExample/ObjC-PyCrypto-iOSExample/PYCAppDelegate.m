@@ -7,7 +7,8 @@
 //
 
 #import "PYCAppDelegate.h"
-#import <ObjC-PYCrypto/ObjC-PYCrypto.h>
+
+//#import <ObjC-PYCryptoOSX/AESCipher.h>
 
 @implementation PYCAppDelegate
 
