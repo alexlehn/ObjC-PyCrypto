@@ -7,6 +7,7 @@
 //
 
 #import "PYCAppDelegate.h"
+#import <ObjC-PYCrypto/ObjC-PYCrypto.h>
 
 @implementation PYCAppDelegate
 
